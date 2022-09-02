@@ -111,16 +111,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <p class="fs-5 mb-4">Sign up for our newsletter:</p>
                         <div class="d-grid gap-2 d-sm-flex">
 				<form action="https://formspree.io/f/mzbwdbop" method="POST">
-					<div class="form-group">
-						<label for="name">Password</label>
-						<input type="text" class="form-control" id="name" placeholder="Your Name">
+					<div class="form-row">
+						<div class="col-5">
+							<input type="text" class="form-control" id="name" placeholder="Your Name" name="name">
+						</div>
+						<div class="col-5">
+							<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="email@domain.com" name="email" required>
+							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+						</div>
+						<div class="col-2">
+							<button type="submit" class="btn btn-primary">Submit</button>
+						</div>
 					</div>
-					<div class="form-group">
-						<label for="email">Email address</label>
-						<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="email@domain.com">
-						<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-					</div>
-					<button type="submit" class="btn btn-primary">Submit</button>
 				</form>
                         </div>
                     </div>
